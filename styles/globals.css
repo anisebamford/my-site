@@ -4,6 +4,15 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
     Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  --light-mode-background-color: #FFFFFF;
+  --light-mode-text-color: #000000;
+  --light-mode-primary-color: #6F1198;
+  --dark-mode-background-color: #17041A;
+  --dark-mode-text-color: #FFFFFF;
+  --dark-mode-primary-color: #BD17FF;
+  --text-color: var(--light-mode-text-color);
+  --background-color: var(--light-mode-background-color);
+  --primary-color: var(--light-mode-primary-color);
 }
 
 * {
@@ -19,6 +28,17 @@ main {
   align-items: center;
 }
 
+.dark-mode {
+  --text-color: var(--dark-mode-text-color);
+  --background-color: var(--dark-mode-background-color);
+  --primary-color: var(--dark-mode-primary-color);
+}
+
+.container {
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
 code {
   background: #fafafa;
   border-radius: 5px;
@@ -32,4 +52,8 @@ code {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-color);
 }
