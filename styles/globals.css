@@ -7,12 +7,15 @@ body {
   --light-mode-background-color: #FFFFFF;
   --light-mode-text-color: #000000;
   --light-mode-primary-color: #6F1198;
+  --light-mode-paper-color: #F0F0F0;
   --dark-mode-background-color: #17041A;
   --dark-mode-text-color: #FFFFFF;
   --dark-mode-primary-color: #BD17FF;
+  --dark-mode-paper-color: #424242;
   --text-color: var(--light-mode-text-color);
   --background-color: var(--light-mode-background-color);
   --primary-color: var(--light-mode-primary-color);
+  --paper-color: var(--light-mode-paper-color);
 }
 
 * {
@@ -32,6 +35,7 @@ main {
   --text-color: var(--dark-mode-text-color);
   --background-color: var(--dark-mode-background-color);
   --primary-color: var(--dark-mode-primary-color);
+  --paper-color: var(--dark-mode-paper-color);
 }
 
 .container {
@@ -40,7 +44,7 @@ main {
 }
 
 code {
-  background: #fafafa;
+  background: var(--paper-color);
   border-radius: 5px;
   padding: 0.75rem;
   font-family: Menlo, Monaco, Lucida Console, Courier New, monospace;
@@ -56,4 +60,17 @@ code {
 
 h1, h2, h3, h4, h5, h6 {
   color: var(--primary-color);
+}
+
+button {
+  border: 1px solid var(--background-color);
+  min-width: 3rem;
+  min-height: 3rem;
+  margin: 0.5rem;
+  background: var(--paper-color);
+  border-radius: 5px;
+}
+
+button:hover {
+  border: 1px solid var(--primary-color)
 }
