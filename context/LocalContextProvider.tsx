@@ -22,7 +22,6 @@ export function LocalContextProvider({children}: PropsWithChildren) {
 
   useEffect(() => {
     const localState = getStateFromStorage()
-    console.log(localState)
     if (!localState) {
       setStateToStorage(contextState)
     }
