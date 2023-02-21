@@ -18,7 +18,7 @@ export function LocalContextProvider({children}: PropsWithChildren) {
   const setContextStateToMemoryAndStorage = useCallback(function setContextStateToMemoryAndStorage(newState) {
     setStateToStorage(newState)
     setContextState(newState)
-  })
+  }, [setContextState])
 
   useEffect(() => {
     const localState = getStateFromStorage()
