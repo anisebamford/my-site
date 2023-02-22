@@ -25,8 +25,6 @@ export default function Home() {
             <a href="https://www.linkedin.com/in/anise-bamford-bab747229/">LinkedIn</a>
             <a href="https://github.com/bumpusfrancus">Github</a>
         </main>
-
-        <Footer />
       </div>
   )
 }
