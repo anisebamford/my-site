@@ -25,7 +25,7 @@ export function LocalContextProvider({children}: PropsWithChildren) {
     if (!localState) {
       setStateToStorage(contextState)
     }
-    else {
+    else if(JSON.stringify(contextState) !== JSON.stringify(localState)) {
       setContextState(localState)
     }
   }, [contextState, setContextState])

@@ -69,8 +69,13 @@ button {
   margin: 0.5rem;
   background: var(--paper-color);
   border-radius: 5px;
+  color: var(--text-color);
 }
 
 button:hover {
-  border: 1px solid var(--primary-color)
+  border: 1px solid var(--primary-color);
+}
+
+a {
+  color: var(--text-color);
 }
