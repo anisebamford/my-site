@@ -1,6 +1,8 @@
 import Head from 'next/head'
-import Footer from '../components/Footer'
 import {DarkModeToggle} from "../components/DarkModeToggle"
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
+import {faLinkedin, faGithub} from "@fortawesome/free-brands-svg-icons"
+
 
 export default function Home() {
   return (
@@ -22,8 +24,12 @@ export default function Home() {
           <h3>Contact me</h3>
             <a href="mailto:anisebamford@gmail.com">anisebamford@gmail.com</a>
           <h3>Find me online</h3>
-            <a href="https://www.linkedin.com/in/anise-bamford-bab747229/">LinkedIn</a>
-            <a href="https://github.com/bumpusfrancus">Github</a>
+            <a href="https://www.linkedin.com/in/anise-bamford-bab747229/">
+              <FontAwesomeIcon icon={faLinkedin} />
+            </a>
+            <a href="https://github.com/bumpusfrancus">
+              <FontAwesomeIcon icon={faGithub} />
+            </a>
         </main>
       </div>
   )
