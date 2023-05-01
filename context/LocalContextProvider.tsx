@@ -1,5 +1,6 @@
 import {useCallback, useState, useEffect, useMemo, PropsWithChildren} from "react"
 import {LocalContext, TLocalContextState} from "./LocalContext"
+import {getStateFromStorage, setStateToStorage} from "./storage"
 
 const STATE_KEY = "LOCAL_CONTEXT_STATE";
 
